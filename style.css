@@ -17,11 +17,14 @@
     width: 100vw;
     height: calc(100vh - 43px);
 }
-.side-bar{
+.side-bar,.side-bar2{
     position: absolute;
     top: 10px;
     left: 10px;
     color: white;
+}
+.side-bar2{
+    left: 120px;
 }
 .side-bar-icons{
     height: 50px;
