@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .main-container {
     width: 100vw;
     height: 100vh;
@@ -23,6 +22,9 @@
     top: 10px;
     left: 10px;
 }
+.side-bar-icons{
+    height: 60px;
+}
 .nav {
     max-height: 43px;
     position: relative;
@@ -31,6 +33,7 @@
     display: inline;
     background-color: rgb(30, 30, 30);;
 }
+.image{height: 20px;}
 .searchbar{
     display: inline-block;
     vertical-align: top;
@@ -42,12 +45,14 @@
     top: 0px;
     margin: 10px 5px;
     display: inline;
+    height: 20px;
 }
 .search{
     width: 350px;
     height: 40px;
     border-width: 0px;
 }
+.apps-icons{ height:  40px;} 
 .menu,.apps
 {
     display: inline-block;
@@ -66,7 +71,6 @@
     height: calc(100vh - 43px);
     background-color: rgba(0, 0, 0, 0.822);
 }
-
 .app iframe {
     width: 100vw;
     height: calc(100vh - 110px);
