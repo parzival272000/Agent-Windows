@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.main-container {
     width: 100vw;
     height: 100vh;
     background-color: rgb(30, 30, 30);
@@ -52,11 +52,16 @@
     right: 20px;
     bottom: 0px
 }
-.menu-content
-{
-    display: inline-block;
+.app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 43px);
+    background-color: rgba(0, 0, 0, 0.822);
 }
-.menu-content p{
-    font-size: 12px;
-    display: inline-block;
+
+.app iframe {
+    width: 100vw;
+    height: calc(100vh - 110px);
 }

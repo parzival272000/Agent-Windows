@@ -6,33 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows Home</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="main-container">
         <div class="desktop"></div>
         <div class="nav">
             <div  class="Window-icon">
-                <img class="image" src="img/win1.svg" height="20px" style="margin: 10px; display: inline; max-height: 43px;">
+                <img class="image" src="img/icons/windows/win1.svg" height="20px" style="margin: 10px; display: inline; max-height: 43px;">
             </div>
             <div class="searchbar">
-                <img class="search-icon" src="img/Search.svg" height="20px">
+                <img class="search-icon" src="img/icons/windows/Search.svg" height="20px">
                 <p class="search-icon" style="left: 30px">Type here to search</p>
                 <input class="search" type="text" name="Search" width="350" height="40">
             </div>
             <div class="apps">
-                <img src="img/edge.svg" height="40px" style="padding: 7px; display: inline;">
-                <img src="img/vs.svg" height="40px" style="padding: 7px; display: inline;">
-                <img src="img/chrome.svg" height="40px" style="padding: 7px; display: inline;">
-                <img src="img/stoptify.svg" height="40px" style="padding: 7px; display: inline;">
+                <img src="img/icons/apps/edge.svg" height="40px" style="padding: 7px; display: inline;">
+                <img src="img/icons/apps/vs.svg" height="40px" style="padding: 7px; display: inline;">
+                <img src="img/icons/apps/chrome.svg" height="40px" style="padding: 7px; display: inline;">
+                <img src="img/icons/apps/stoptify.svg" height="40px" style="padding: 7px; display: inline;">
             </div>
             <div class="menu">
-                <img src="img/volume.svg" height="40" style="padding: 5px; display: inline;">
-                <img src="img/Comments.svg" height="40" style="padding: 5px; display: inline;">
+                <img src="img/icons/windows/volume.svg" height="40" style="padding: 5px; display: inline;">
+                <img src="img/icons/windows/Comments.svg" height="40" style="padding: 5px; display: inline;">
             </div>
         </div>
     </div>
+    <!-- <div class="app chrome-browser">
+        <div class="w-full pt-0.5 pb-1 flex justify-between">
+            <div class="p-1 flex justify-start text-white border-r-2 border-white w-1/6" style="border-radius: 3px;">
+                <img style="border-radius: 40%;" src="./img/icons/apps/google_favicon.png" width="18px" height="10px" />
+                <p class="ml-2" style="font-size: 12px">Google</p>
+            </div>
+            <div style="color: white; width: 130px;" class="flex justify-around items-center">
+                <i class="fal fa-window-minimize"></i>
+                <i class="fas fa-window-maximize"></i>
+                <i class="fal fa-times"></i>
+            </div>
+        </div>
+        <div class="w-full pt-0.5 pb-1 flex justify-start items-center text-white text-sm border-b border-gray-900">
+            <div
+                class=" ml-2 mr-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/Left Arrow.png" alt="Chrome Back" />
+            </div>
+            <div
+                class=" ml-2 mr-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/Right Arrow.png" alt="Chrome Next" />
+            </div>
+            <div
+                class=" ml-2 mr-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/chrome_refresh.svg" alt="Chrome Refresh" />
+            </div>
+            <div
+                class=" mr-2 ml-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/chrome_home.svg" alt="Chrome Home" />
+            </div>
+            <input id="chrome-url-bar" style="color: black;"
+                class="outline-none bg-ub-grey rounded-full pl-3 py-0.5 mr-3 w-5/6" type="url" spellCheck="false"
+                autoComplete="off" value="https://www.google.com/" />
+        </div>
+        <iframe src="https://www.google.com/webhp?igu=1" class="flex-grow" id="chrome-screen" frameBorder="0"
+            title="Chrome Url"></iframe>
+    </div> -->
 </body>
 
 </html>
