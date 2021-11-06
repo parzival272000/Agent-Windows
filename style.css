@@ -8,6 +8,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(30, 30, 30);
+    position: relative;
 }
 
 .desktop {
@@ -16,6 +17,11 @@
     background-position-y: center;
     width: 100vw;
     height: calc(100vh - 43px);
+}
+.side-bar{
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 .nav {
     max-height: 43px;
