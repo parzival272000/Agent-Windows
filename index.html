@@ -8,6 +8,8 @@
     <title>Windows Home</title>
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -17,13 +19,26 @@
     </div>
 
     <div class="app chrome-browser">
-        <div class="w-full pt-0.5 pb-1 justify-space-between">
+        <div class="w-full pt-0.5 pb-1 flex justify-between">
             <div class="p-1 flex justify-start text-white border-r-2 border-white w-1/6" style="border-radius: 3px;">
                 <img style="border-radius: 40%;" src="./img/icons/apps/google_favicon.png" width="18px" height="10px" />
                 <p class="ml-2" style="font-size: 12px">Google</p>
             </div>
+            <div style="color: white; width: 130px;" class="flex justify-around items-center">
+                <i class="fal fa-window-minimize"></i>
+                <i class="fas fa-window-maximize"></i>
+                <i class="fal fa-times"></i>
+            </div>
         </div>
         <div class="w-full pt-0.5 pb-1 flex justify-start items-center text-white text-sm border-b border-gray-900">
+            <div
+                class=" ml-2 mr-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/Left Arrow.png" alt="Chrome Back" />
+            </div>
+            <div
+                class=" ml-2 mr-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/Right Arrow.png" alt="Chrome Next" />
+            </div>
             <div
                 class=" ml-2 mr-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
                 <img class="w-5" src="./img/icons/apps/chrome_refresh.svg" alt="Chrome Refresh" />
