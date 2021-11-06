@@ -6,12 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows Home</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="desktop"></div>
+    </div>
+
+    <div class="app chrome-browser">
+        <div class="w-full pt-0.5 pb-1 justify-space-between">
+            <div class="p-1 flex justify-start text-white border-r-2 border-white w-1/6" style="border-radius: 3px;">
+                <img style="border-radius: 40%;" src="./img/icons/apps/google_favicon.png" width="18px" height="10px" />
+                <p class="ml-2" style="font-size: 12px">Google</p>
+            </div>
+        </div>
+        <div class="w-full pt-0.5 pb-1 flex justify-start items-center text-white text-sm border-b border-gray-900">
+            <div
+                class=" ml-2 mr-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/chrome_refresh.svg" alt="Chrome Refresh" />
+            </div>
+            <div
+                class=" mr-2 ml-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/chrome_home.svg" alt="Chrome Home" />
+            </div>
+            <input id="chrome-url-bar" style="color: black;"
+                class="outline-none bg-ub-grey rounded-full pl-3 py-0.5 mr-3 w-5/6" type="url" spellCheck="false"
+                autoComplete="off" value="https://www.google.com/" />
+        </div>
+        <iframe src="https://www.google.com/webhp?igu=1" class="flex-grow" id="chrome-screen" frameBorder="0"
+            title="Chrome Url"></iframe>
     </div>
 </body>
 
