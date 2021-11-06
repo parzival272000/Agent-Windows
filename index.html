@@ -8,7 +8,7 @@
     <title>Windows Home</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
@@ -17,15 +17,21 @@
     <div class="main-container">
         <div class="desktop"></div>
         <div class="side-bar">
-            <img class="side-bar-icons" src="img/icons/apps/ThisPC.png" alt="THIS PC" style="padding: 5px; display: block;">
-            <img class="side-bar-icons"  src="img/icons/apps/edge.svg" alt="MICROSOFT EDGE" style="padding: 5px; display: block; margin-top: 20px;">
-            <img class="side-bar-icons"  src="img/icons/apps/chrome.svg" alt="CHROME" style="padding: 5px; display: block; margin-top: 20px">
-            <img class="side-bar-icons"  src="img/icons/apps/firefox.png" alt="FIREFOX" style="padding: 5px; display: block; margin-top: 20px">
-            <img class="side-bar-icons"  src="img/icons/apps/trash.png" alt="TRASH" style="padding: 5px; display: block; margin-top: 20px">
+            <img class="side-bar-icons" src="img/icons/apps/ThisPC.png" alt="THIS PC"
+                style="padding: 5px; display: block;">
+            <img class="side-bar-icons" src="img/icons/apps/edge.svg" alt="MICROSOFT EDGE"
+                style="padding: 5px; display: block; margin-top: 20px;">
+            <img class="side-bar-icons" src="img/icons/apps/chrome.svg" alt="CHROME"
+                style="padding: 5px; display: block; margin-top: 20px" ondblclick="openApp('google-chrome')">
+            <img class="side-bar-icons" src="img/icons/apps/firefox.png" alt="FIREFOX"
+                style="padding: 5px; display: block; margin-top: 20px">
+            <img class="side-bar-icons" src="img/icons/apps/trash.png" alt="TRASH"
+                style="padding: 5px; display: block; margin-top: 20px">
         </div>
         <div class="nav">
-            <div  class="Window-icon">
-                <img class="image" src="img/icons/windows/win1.svg" style="margin: 10px; display: inline; max-height: 43px;">
+            <div class="Window-icon">
+                <img class="image" src="img/icons/windows/win1.svg"
+                    style="margin: 10px; display: inline; max-height: 43px;">
             </div>
             <div class="searchbar">
                 <img class="search-icon" src="img/icons/windows/Search.svg">
@@ -34,19 +40,81 @@
             </div>
             <div class="apps">
                 <img class="apps-icons" src="img/icons/apps/firefox.png" style="padding: 7px; display: inline;">
-                <img class="apps-icons"  src="img/icons/apps/edge.svg" style="padding: 7px; display: inline;">
-                <img  class="apps-icons" src="img/icons/apps/vs.svg" style="padding: 7px; display: inline;">
-                <a href="test.html">
-                    <img  class="apps-icons" src="img/icons/apps/chrome.svg" style="padding: 7px; display: inline;">
-                </a>
-                <img   class="apps-icons"  src="img/icons/apps/stoptify.svg" style="padding: 7px; display: inline;">
+                <img class="apps-icons" src="img/icons/apps/edge.svg" style="padding: 7px; display: inline;">
+                <img class="apps-icons" src="img/icons/apps/vs.svg" style="padding: 7px; display: inline;">
+
+                <img class="apps-icons" src="img/icons/apps/chrome.svg" style="padding: 7px; display: inline;"
+                    onclick="openApp('google-chrome')">
+                <img class="apps-icons" src="img/icons/apps/stoptify.svg" style="padding: 7px; display: inline;"
+                    onclick="openApp('spotify')">
             </div>
             <div class="menu">
-                <img   class="apps-icons"  src="img/icons/windows/volume.svg" style="padding: 5px; display: inline;">
-                <img   class="apps-icons"  src="img/icons/windows/Comments.svg" style="padding: 5px; display: inline;">
+                <img class="apps-icons" src="img/icons/windows/volume.svg" style="padding: 5px; display: inline;">
+                <img class="apps-icons" src="img/icons/windows/Comments.svg" style="padding: 5px; display: inline;">
             </div>
         </div>
     </div>
+
+    <div id="google-chrome" class="app chrome-browser">
+        <div class="w-full pt-0.5 pb-1 flex justify-between" style="height: 36px;">
+            <div class="p-1 flex justify-start text-white border-r-2 border-white w-1/6" style="border-radius: 3px;">
+                <img style="border-radius: 40%;" src="./img/icons/apps/google_favicon.png" width="18px" height="10px" />
+                <p class="ml-2" style="font-size: 12px">Google</p>
+            </div>
+            <div style="color: white; width: 130px;" class="flex justify-around items-center">
+                <i class="fal fa-window-minimize" onclick="closeApp('google-chrome')"></i>
+                <i class="fas fa-window-maximize"></i>
+                <i class="fal fa-times" onclick="closeApp('google-chrome')"></i>
+            </div>
+        </div>
+        <div class="w-full pt-0.5 pb-1 flex justify-start items-center text-white text-sm border-b border-gray-900">
+            <div
+                class=" ml-2 mr-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/Left Arrow.png" alt="Chrome Back" />
+            </div>
+            <div
+                class=" ml-2 mr-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/Right Arrow.png" alt="Chrome Next" />
+            </div>
+            <div
+                class=" ml-2 mr-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/chrome_refresh.svg" alt="Chrome Refresh" />
+            </div>
+            <div
+                class=" mr-2 ml-1 flex justify-center items-center rounded-full bg-gray-50 bg-opacity-0 hover:bg-opacity-10">
+                <img class="w-5" src="./img/icons/apps/chrome_home.svg" alt="Chrome Home" />
+            </div>
+            <input id="chrome-url-bar" style="color: black;"
+                class="outline-none bg-ub-grey rounded-full pl-3 py-0.5 mr-3 w-5/6" type="url" spellCheck="false"
+                autoComplete="off" value="https://www.google.com/" />
+        </div>
+        <iframe src="https://www.google.com/webhp?igu=1" class="flex-grow" id="chrome-screen" frameBorder="0"
+            title="Chrome Url"></iframe>
+    </div>
+
+    <div id="spotify" class="app spotify">
+        <div class="w-full pt-0.5 pb-1 flex justify-end" style="height: 36px;">
+            <div style="color: white; width: 130px;" class="flex justify-around items-center">
+                <i class="fal fa-window-minimize" onclick="closeApp('spotify')"></i>
+                <i class="fas fa-window-maximize"></i>
+                <i class="fal fa-times" onclick="closeApp('spotify')"></i>
+            </div>
+        </div>
+        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZEVXbLZ52XmnySJg" frameBorder="0" title="Spotify"
+            className="h-full w-full bg-ub-cool-grey"></iframe>
+    </div>
+
+    <script>
+        function openApp(app) {
+            const appDiv = document.getElementById(app)
+            appDiv.style.display = 'block'
+        }
+
+        function closeApp(app) {
+            const appDiv = document.getElementById(app)
+            appDiv.style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>
