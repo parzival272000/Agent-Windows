@@ -11,9 +11,52 @@
 }
 
 .desktop {
-    background-image: url('./img/bg.png');
+    background-image: url('./img/windows.jpg');
     background-size: cover;
     background-position-y: center;
     width: 100vw;
-    height: calc(100vh - 40px);
+    height: calc(100vh - 43px);
+}
+.nav {
+    max-height: 43px;
+    position: relative;
+}
+.Window-icon{
+    display: inline;
+    background-color: rgb(30, 30, 30);;
+}
+.searchbar{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 10px 5px;
+    display: inline;
+}
+.search{
+    width: 350px;
+    height: 40px;
+    border-width: 0px;
+}
+.menu,.apps
+{
+    display: inline-block;
+    max-height: 43px;
+}
+.menu{
+    position: absolute;
+    right: 20px;
+    bottom: 0px
+}
+.menu-content
+{
+    display: inline-block;
+}
+.menu-content p{
+    font-size: 12px;
+    display: inline-block;
 }
