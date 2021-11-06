@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows Home</title>
+    <title>Agent-Windows</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -22,27 +22,29 @@
                 <p style="font-size: 12px">This PC</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons"  src="img/icons/apps/trash.png" alt="TRASH" style="margin-top: 20px">
+                <img class="side-bar-icons" src="img/icons/apps/trash.png" alt="TRASH" style="margin-top: 20px">
                 <p style="font-size: 12px;">Trash</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons"  src="img/icons/apps/edge.svg" alt="MICROSOFT EDGE" style="margin-top: 20px;">
+                <img class="side-bar-icons" src="img/icons/apps/edge.svg" alt="MICROSOFT EDGE"
+                    style="margin-top: 20px;">
                 <p style="font-size: 12px">Microsoft Edge</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons"  src="img/icons/apps/chrome.svg" alt="CHROME" style="margin-top: 20px"  ondblclick="openApp('google-chrome')">
+                <img class="side-bar-icons" src="img/icons/apps/chrome.svg" alt="CHROME" style="margin-top: 20px"
+                    ondblclick="openApp('google-chrome')">
                 <p style="font-size: 12px">Chrome</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons"  src="img/icons/apps/firefox.png" alt="FIREFOX" style="margin-top: 20px">
+                <img class="side-bar-icons" src="img/icons/apps/firefox.png" alt="FIREFOX" style="margin-top: 20px">
                 <p style="font-size: 12px">Firefox</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder"  style="margin-top: 20px">
+                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder" style="margin-top: 20px">
                 <p style="font-size: 12px">ML project</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder"  style="margin-top: 20px">
+                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder" style="margin-top: 20px">
                 <p style="font-size: 12px">Images</p>
             </div>
         </div>
@@ -52,27 +54,27 @@
                 <p style="font-size: 12px">Workspace</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder"  style="margin-top: 20px">
+                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder" style="margin-top: 20px">
                 <p style="font-size: 12px">Wedding Image</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder"  style="margin-top: 20px">
+                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder" style="margin-top: 20px">
                 <p style="font-size: 12px">Notes</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder"  style="margin-top: 20px">
+                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder" style="margin-top: 20px">
                 <p style="font-size: 12px">Study Material</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder"  style="margin-top: 20px">
+                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder" style="margin-top: 20px">
                 <p style="font-size: 12px">CG Notes</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder"  style="margin-top: 20px">
+                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder" style="margin-top: 20px">
                 <p style="font-size: 12px">Game Development</p>
             </div>
             <div style="text-align: -webkit-center;">
-                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder"  style="margin-top: 20px">
+                <img class="side-bar-icons" src="img/icons/windows/folder.png" alt="folder" style="margin-top: 20px">
                 <p style="font-size: 12px">Web Development</p>
             </div>
         </div>
@@ -98,9 +100,20 @@
                 <img class="apps-icons" src="img/icons/apps/stoptify.svg" style="padding: 7px; display: inline;"
                     onclick="openApp('spotify')">
             </div>
-            <div class="menu">
-                <img class="apps-icons" src="img/icons/windows/volume.svg" style="padding: 5px; display: inline;">
-                <img class="apps-icons" src="img/icons/windows/Comments.svg" style="padding: 5px; display: inline;">
+            <div style="width: 180px;" class="menu flex justify-around">
+                <div>
+                    <img class="apps-icons" src="img/icons/windows/volume.svg" style="padding: 5px; display: inline;">
+                </div>
+                <div class="flex justify-center items-center">
+                    <p class="text-white text-xs">ENG</p>
+                </div>
+                <div style="width: 80px;" class="flex justify-center items-center flex-wrap">
+                    <p class="text-white text-xs">00:12</p>
+                    <p class="text-white text-xs">07-11-2021</p>
+                </div>
+                <div>
+                    <img class="apps-icons" src="img/icons/windows/Comments.svg" style="padding: 5px; display: inline;">
+                </div>
             </div>
         </div>
     </div>
